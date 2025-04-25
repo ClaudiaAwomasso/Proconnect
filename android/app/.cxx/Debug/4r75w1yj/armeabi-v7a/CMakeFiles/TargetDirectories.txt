@@ -1,0 +1,2 @@
+/home/claudia/AndroidStudioProjects/pro_connect/android/app/.cxx/Debug/4r75w1yj/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/claudia/AndroidStudioProjects/pro_connect/android/app/.cxx/Debug/4r75w1yj/armeabi-v7a/CMakeFiles/rebuild_cache.dir
