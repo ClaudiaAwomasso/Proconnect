@@ -20,6 +20,10 @@ class _PageInscriptionState extends State<PageInscription> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      appBar: AppBar(
+          backgroundColor: AppColors.primaryColor,
+              foregroundColor: Colors.white,
+      ),
         body: Container(
           //  width: double.infinity,
 
@@ -29,10 +33,10 @@ class _PageInscriptionState extends State<PageInscription> {
           child: ListView(
 
             children: [
-              SizedBox(height: 60,),
+              SizedBox(height: 30,),
               Padding(
-                padding:  EdgeInsets.all(15),
-                child: Text( textAlign:TextAlign.center, 'ProConnect',style: TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.bold),),
+                padding:  EdgeInsets.only(top: 15),
+                child: Text( textAlign:TextAlign.center, 'ProConnect',style: TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.bold,),),
               ),
               SizedBox(height: 20,),
 

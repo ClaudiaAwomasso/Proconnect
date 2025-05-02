@@ -20,7 +20,6 @@ class ModelTextField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: TextField(
-
           keyboardType: TextInputType.visiblePassword,
           controller: controller,
           decoration: InputDecoration(

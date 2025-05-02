@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
                       ),
                       Text(
                         textAlign: TextAlign.center,
-                        "Construisez votre avenir avec succès !nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn ",
+                        "Construisez votre avenir avec succès ! ",
                         style: TextStyle(
                           color: Colors.black,
 

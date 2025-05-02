@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pro_connect/views/page/home_page.dart';
+import 'package:pro_connect/views/page/logo_page.dart';
 import 'package:pro_connect/views/page/page_connexion.dart';
 import 'package:pro_connect/views/page/page_inscription.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       // home:  PageInscription(),
       initialRoute: '/',
       routes: {
-        '/': (context) => MyHomePage(),
+        '/': (context) => LogoPage(),
         '/inscription': (context) => PageInscription(),
         '/connexion': (context) => PageConnexion()
       },

@@ -3,8 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:pro_connect/views/colors/app_colors.dart';
 import 'package:pro_connect/views/images_path/images_path.dart';
+//import 'package:pro_connect/views/page/page_example.dart';
 
 import '../models_ui/App_text_field.dart';
+import 'home_apresconnexion.dart';
 
 
 class PageConnexion extends StatefulWidget {
@@ -23,6 +25,10 @@ class _PageConnexionState extends State<PageConnexion> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppColors.primaryColor,
+        foregroundColor: Colors.white,
+      ),
           body: Container(
           //  width: double.infinity,
 
@@ -33,7 +39,7 @@ class _PageConnexionState extends State<PageConnexion> {
           child: ListView(
 
               children: [
-                SizedBox(height: 60,),
+                SizedBox(height: 30,),
               Padding(
                 padding:  EdgeInsets.all(15),
                 child: Text( textAlign:TextAlign.center, 'ProConnect',style: TextStyle(color:Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
@@ -51,7 +57,6 @@ class _PageConnexionState extends State<PageConnexion> {
           SizedBox(height: 20),
           // email
           ModelTextField(
-
             // keyboardType: TextInputType.name,
             controller: nomController,
             hintText: 'Email',
@@ -83,7 +88,10 @@ class _PageConnexionState extends State<PageConnexion> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                 ),
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ProconnectHome()));
+                  },
                   child: Text('Se connecter',style: TextStyle(color: Colors.white,fontSize: 16),)
               ),
             ),
